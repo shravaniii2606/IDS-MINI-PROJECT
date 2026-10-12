@@ -6,6 +6,7 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 5000;
 const DATA_DIR = path.join(__dirname, 'data');
+const CLIENT_DIST_DIR = path.join(__dirname, '..', 'client', 'dist');
 
 function readJson(filename) {
   const filePath = path.join(DATA_DIR, filename);
@@ -40,6 +41,7 @@ function euclideanDistance(first, second) {
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static(CLIENT_DIST_DIR));
 
 app.get('/api/summary', (req, res) => {
   res.json(summary);
@@ -99,6 +101,13 @@ app.get('/api/recommend', (req, res) => {
     },
     recommendations,
   });
+});
+
+app.get('*', (req, res, next) => {
+  if (req.path === '/api' || req.path.startsWith('/api/')) {
+    return next();
+  }
+  return res.sendFile(path.join(CLIENT_DIST_DIR, 'index.html'));
 });
 
 try {
