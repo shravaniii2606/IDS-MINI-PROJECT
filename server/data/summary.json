@@ -1,0 +1,291 @@
+{
+  "counts_by_type": {
+    "Movie": 6129,
+    "TV Show": 2576
+  },
+  "titles_added_per_year": {
+    "2008": 2,
+    "2009": 2,
+    "2010": 1,
+    "2011": 13,
+    "2012": 3,
+    "2013": 10,
+    "2014": 23,
+    "2015": 73,
+    "2016": 417,
+    "2017": 1162,
+    "2018": 1624,
+    "2019": 1999,
+    "2020": 1878,
+    "2021": 1498
+  },
+  "top_10_genres": [
+    {
+      "genre": "International Movies",
+      "count": 2752
+    },
+    {
+      "genre": "Dramas",
+      "count": 2426
+    },
+    {
+      "genre": "Comedies",
+      "count": 1674
+    },
+    {
+      "genre": "International Tv Shows",
+      "count": 1327
+    },
+    {
+      "genre": "Documentaries",
+      "count": 869
+    },
+    {
+      "genre": "Action & Adventure",
+      "count": 859
+    },
+    {
+      "genre": "Independent Movies",
+      "count": 756
+    },
+    {
+      "genre": "Tv Dramas",
+      "count": 739
+    },
+    {
+      "genre": "Children & Family Movies",
+      "count": 641
+    },
+    {
+      "genre": "Romantic Movies",
+      "count": 616
+    }
+  ],
+  "top_10_countries": [
+    {
+      "country": "United States",
+      "count": 3643
+    },
+    {
+      "country": "India",
+      "count": 1045
+    },
+    {
+      "country": "United Kingdom",
+      "count": 787
+    },
+    {
+      "country": "Canada",
+      "count": 432
+    },
+    {
+      "country": "France",
+      "count": 389
+    },
+    {
+      "country": "Japan",
+      "count": 313
+    },
+    {
+      "country": "Spain",
+      "count": 228
+    },
+    {
+      "country": "South Korea",
+      "count": 226
+    },
+    {
+      "country": "Germany",
+      "count": 225
+    },
+    {
+      "country": "Mexico",
+      "count": 169
+    }
+  ],
+  "cluster_summary": [
+    {
+      "cluster": 0,
+      "size": 485,
+      "avg_release_year": 1985.26,
+      "avg_duration_num": 110.88,
+      "avg_genre_count": 2.33,
+      "top_genres": [
+        "Dramas",
+        "International Movies",
+        "Comedies"
+      ],
+      "type_split": {
+        "Movie": 464,
+        "TV Show": 21
+      },
+      "sample_titles": [
+        "Sankofa",
+        "Avvai Shanmughi",
+        "Jeans"
+      ]
+    },
+    {
+      "cluster": 1,
+      "size": 2101,
+      "avg_release_year": 2014.96,
+      "avg_duration_num": 102.42,
+      "avg_genre_count": 1.96,
+      "top_genres": [
+        "International Movies",
+        "Dramas",
+        "Comedies"
+      ],
+      "type_split": {
+        "Movie": 2101,
+        "TV Show": 0
+      },
+      "sample_titles": [
+        "The Starling",
+        "Je Suis Karl",
+        "Confessions of an Invisible Girl"
+      ]
+    },
+    {
+      "cluster": 2,
+      "size": 2143,
+      "avg_release_year": 2017.17,
+      "avg_duration_num": 2.9,
+      "avg_genre_count": 2.61,
+      "top_genres": [
+        "International Tv Shows",
+        "Tv Dramas",
+        "Tv Comedies"
+      ],
+      "type_split": {
+        "TV Show": 2053,
+        "Movie": 90
+      },
+      "sample_titles": [
+        "Blood & Water",
+        "Ganglands",
+        "Jailbirds New Orleans"
+      ]
+    },
+    {
+      "cluster": 3,
+      "size": 2145,
+      "avg_release_year": 2015.19,
+      "avg_duration_num": 110.24,
+      "avg_genre_count": 3.0,
+      "top_genres": [
+        "International Movies",
+        "Dramas",
+        "Comedies"
+      ],
+      "type_split": {
+        "Movie": 2145,
+        "TV Show": 0
+      },
+      "sample_titles": [
+        "Ankahi Kahaniya",
+        "The Father Who Moves Mountains",
+        "The Stronghold"
+      ]
+    },
+    {
+      "cluster": 4,
+      "size": 1831,
+      "avg_release_year": 2016.34,
+      "avg_duration_num": 56.24,
+      "avg_genre_count": 1.0,
+      "top_genres": [
+        "Documentaries",
+        "Stand-Up Comedy",
+        "Kids' Tv"
+      ],
+      "type_split": {
+        "Movie": 1329,
+        "TV Show": 502
+      },
+      "sample_titles": [
+        "Dick Johnson Is Dead",
+        "My Little Pony: A New Generation",
+        "Intrusion"
+      ]
+    }
+  ],
+  "chosen_k": 5,
+  "silhouette_score": 0.4646,
+  "elbow_inertia_values": [
+    {
+      "k": 2,
+      "inertia": 18506.5639
+    },
+    {
+      "k": 3,
+      "inertia": 13333.4457
+    },
+    {
+      "k": 4,
+      "inertia": 8496.4675
+    },
+    {
+      "k": 5,
+      "inertia": 6756.714
+    },
+    {
+      "k": 6,
+      "inertia": 5526.8334
+    },
+    {
+      "k": 7,
+      "inertia": 4591.246
+    },
+    {
+      "k": 8,
+      "inertia": 4016.4673
+    },
+    {
+      "k": 9,
+      "inertia": 3501.5784
+    },
+    {
+      "k": 10,
+      "inertia": 3184.874
+    }
+  ],
+  "silhouette_values": [
+    {
+      "k": 2,
+      "score": 0.3439
+    },
+    {
+      "k": 3,
+      "score": 0.393
+    },
+    {
+      "k": 4,
+      "score": 0.4621
+    },
+    {
+      "k": 5,
+      "score": 0.4646
+    },
+    {
+      "k": 6,
+      "score": 0.4972
+    },
+    {
+      "k": 7,
+      "score": 0.5065
+    },
+    {
+      "k": 8,
+      "score": 0.5322
+    },
+    {
+      "k": 9,
+      "score": 0.5424
+    },
+    {
+      "k": 10,
+      "score": 0.5408
+    }
+  ]
+}
